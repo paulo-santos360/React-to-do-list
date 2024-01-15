@@ -49,7 +49,6 @@ function App() {
           {list.length > 0 ? (
             list.map((item) => (
               <ListItem isFinished={item.finished} key={item.id}>
-                {/*  $ corrigir erro console.log*/}
                 <Check onClick={() => finalizarTarefa(item.id)} />
                 <li>{item.task}</li>
                 <Trash onClick={() => deletarItem(item.id)} />
